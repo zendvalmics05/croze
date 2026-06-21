@@ -1,5 +1,5 @@
 from datetime import datetime
-from backend.core.models import (
+from core.models import (
     Machine, Operation, Product, Order, ScheduledJob,
     Schedule, MachineStats, JobStats, SimulationResult,
     FactoryModel, WorkingCalendar
