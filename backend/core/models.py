@@ -103,3 +103,10 @@ class WorkingCalendar:
     state: str                          # Indian state name
     overrides: Dict[str, bool]          # 'YYYY-MM-DD' -> is_working
     shift_overrides: Dict[str, int]     # 'YYYY-MM-DD' -> shifts_per_day
+
+@dataclass
+class FeasibilityReport:
+    is_feasible: bool
+    infeasible_machines: List[dict]
+    at_risk_orders: List[str]
+
